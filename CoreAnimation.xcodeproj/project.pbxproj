@@ -15,6 +15,7 @@
 		D789B7D221250AAE0054D84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D789B7D121250AAE0054D84B /* main.m */; };
 		D789B7DC21250AAE0054D84B /* CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D789B7DB21250AAE0054D84B /* CoreAnimationTests.m */; };
 		D789B7E721250AAE0054D84B /* CoreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D789B7E621250AAE0054D84B /* CoreAnimationUITests.m */; };
+		D789B7FA212526280054D84B /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D789B7F9212526280054D84B /* GlobalFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		D789B7E221250AAE0054D84B /* CoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D789B7E621250AAE0054D84B /* CoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationUITests.m; sourceTree = "<group>"; };
 		D789B7E821250AAE0054D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D789B7F8212526280054D84B /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
+		D789B7F9212526280054D84B /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
+		D789B7FB212526450054D84B /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		D789B7C121250AAC0054D84B /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				D789B7F7212526280054D84B /* Global */,
 				D789B7C221250AAC0054D84B /* AppDelegate.h */,
 				D789B7C321250AAC0054D84B /* AppDelegate.m */,
 				D789B7C521250AAC0054D84B /* ViewController.h */,
@@ -110,6 +115,7 @@
 				D789B7CD21250AAE0054D84B /* LaunchScreen.storyboard */,
 				D789B7D021250AAE0054D84B /* Info.plist */,
 				D789B7D121250AAE0054D84B /* main.m */,
+				D789B7FB212526450054D84B /* Prefix.pch */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -130,6 +136,15 @@
 				D789B7E821250AAE0054D84B /* Info.plist */,
 			);
 			path = CoreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		D789B7F7212526280054D84B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D789B7F8212526280054D84B /* GlobalFunction.h */,
+				D789B7F9212526280054D84B /* GlobalFunction.m */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +279,7 @@
 			files = (
 				D789B7C721250AAC0054D84B /* ViewController.m in Sources */,
 				D789B7D221250AAE0054D84B /* main.m in Sources */,
+				D789B7FA212526280054D84B /* GlobalFunction.m in Sources */,
 				D789B7C421250AAC0054D84B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,12 +451,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreAnimation/Prefix.pch";
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.CoreAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.JnKindle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,12 +470,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreAnimation/Prefix.pch";
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.CoreAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.JnKindle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
