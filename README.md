@@ -4,11 +4,10 @@
 1、CABaseAnimation
 
 
-
+ <pre><code>
 /**
  移动动画
  */
- <pre><code>
 - (void)testPositionAnimation
 {
     CGFloat tempViewWidth = 50;
