@@ -33,7 +33,7 @@
 }
 </code></pre>
 
-
+ <pre><code>
 /**
  旋转动画
  */
@@ -55,8 +55,9 @@
     animation.toValue = [NSNumber numberWithFloat:M_PI]; // 终止角度
     [tempView.layer addAnimation:animation forKey:@"transformRotationAnimation"];
 }
+</code></pre>
 
-
+ <pre><code>
 /**
  缩放动画
  */
@@ -78,8 +79,9 @@
     
     [tempView.layer addAnimation:animation forKey:@"transformScaleAnimation"];
 }
+</code></pre>
 
-
+ <pre><code>
 /**
  渐隐动画
  */
@@ -100,10 +102,12 @@
     basicAnimation.repeatCount = 20;
     [tempView.layer addAnimation:basicAnimation forKey:@"opacityAnimation"];
 }
+</code></pre>
 
 
 2、CAKeyframeAnimation
 
+ <pre><code>
 - (void)testPathAnimation
 {
     
@@ -135,9 +139,11 @@
     anima.repeatCount = 20;
     [tempView.layer addAnimation:anima forKey:@"pathAnimation"];
 }
+</code></pre>
 
 3、CAAnimationGroup
 
+<pre><code>
 - (void)testGroupAnimation
 {
     
@@ -170,5 +176,6 @@
     [tempView.layer addAnimation:groupAnimation forKey:@"groupAnimation"];
     
 }
+</code></pre>
 
 4、CATransition
