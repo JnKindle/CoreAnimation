@@ -3,9 +3,12 @@
 
 1、CABaseAnimation
 
+
+
 /**
  移动动画
  */
+ <pre><code>
 - (void)testPositionAnimation
 {
     CGFloat tempViewWidth = 50;
@@ -29,6 +32,7 @@
     anima.repeatCount = 20;
     [tempView.layer addAnimation:anima forKey:@"positionAnimation"];
 }
+</code></pre>
 
 
 /**
@@ -97,6 +101,7 @@
     basicAnimation.repeatCount = 20;
     [tempView.layer addAnimation:basicAnimation forKey:@"opacityAnimation"];
 }
+
 
 2、CAKeyframeAnimation
 
