@@ -179,7 +179,8 @@
 </code></pre>
 
 4、CATransition
-//------------- type：动画过渡类型 -------------
+
+    //------------- type：动画过渡类型 -------------
     /* Apple官方的SDK其实只提供了四种过渡效果。
     kCATransitionFade 渐变效果
     kCATransitionMoveIn 进入覆盖效果
