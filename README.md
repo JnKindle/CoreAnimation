@@ -179,3 +179,31 @@
 </code></pre>
 
 4、CATransition
+//------------- type：动画过渡类型 -------------
+    /* Apple官方的SDK其实只提供了四种过渡效果。
+    kCATransitionFade 渐变效果
+    kCATransitionMoveIn 进入覆盖效果
+    kCATransitionPush 推出效果
+    kCATransitionReveal 揭露离开效果
+     */
+    /* 这类是API引入的，在苹果官网是不会承认的，所以不建议使用
+     cube 立方体效果
+     suckEffect 犹如一块布被抽走
+     oglFlip上 下翻转效果
+     rippleEffect 滴水效果
+     pageCurl 向左翻页
+     pageUnCurl 向下翻页
+     */
+    
+    //------------- subtype：动画过渡方向 -------------
+    /*
+     kCATransitionFromRight 从右侧进入
+     kCATransitionFromLeft 从左侧进入
+     kCATransitionFromTop 从顶部进入
+     kCATransitionFromBottom 从底部进入
+     */
+    
+    /*
+     startProgress：动画起点(在整体动画的百分比)
+     endProgress：动画终点(在整体动画的百分比)
+     */
